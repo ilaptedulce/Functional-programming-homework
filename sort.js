@@ -1,9 +1,9 @@
 // Ex.1 : Sort func[{name:'name',age:18}] by name/age (asc/dsc)
 const array = [{ name: 'Irina', age: 27 }, { name: 'Alex', age: 31 }, { name: 'Dana', age: 20 }, { name: 'Sergiu', age: 25 }]
-function sortByKey (array, key, Order) {
-  if (Order === 'asc') {
+function sortByKey (array, key, order) {
+  if (order === 'asc') {
     return array.sort((a, b) => a[key] > b[key] ? 1 : a[key] < b[key] ? -1 : 0)
-  } else if (Order === 'dsc') {
+  } else if (order === 'dsc') {
     return array.sort((a, b) => a[key] < b[key] ? 1 : a[key] > b[key] ? -1 : 0)
   }
 }

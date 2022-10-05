@@ -19,7 +19,7 @@ const person = {
 }
 
 const deepClone = (input) => {
-  if (typeof input !== 'object') return input
+  if (typeof input !== 'object' || input === null) return input
 
   const newObject = Array.isArray(input) ? [] : {}
   for (const key in input) {
@@ -27,6 +27,8 @@ const deepClone = (input) => {
   }
   return newObject
 }
-
-const copyObj = deepClone(person)
+const obj = null
+const copyObj = deepClone(obj)
+const copyPerson = deepClone(person)
 console.log(copyObj)
+console.log(copyPerson)
