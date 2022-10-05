@@ -1,4 +1,4 @@
-// Ex.3 Object deep clone
+// Ex.3 : Object deep clone
 const person = {
   name: 'Sophie',
   age: 28,
